@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta al amor de mi vida 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SECCIÓN 1: PANTALLA INICIAL -->
+    <section id="inicio" class="seccion visible">
+        <div class="contenedor-inicio">
+            <h1 class="titulo-principal">Carta al amor de mi vida 💗</h1>
+            
+            <div class="introduccion">
+                <p>Quizá no siempre sé cómo decirle lo que siento, y tal vez muchas veces parezca que soy fría o que no me importa demasiado. Pero detrás de cada silencio hay muchas cosas que quisiera decirle y que simplemente no sé cómo expresar.</p>
+                
+                <p>Por eso hice esto para usted. Para intentar poner en palabras un poquito de todo eso que a veces se me queda guardado.</p>
+                
+                <p>Así que... esta vez déjeme decirle, a mi manera, todo aquello que quizás no siempre sé cómo decirle. ❤️</p>
+            </div>
+            
+            <button class="boton-principal" onclick="irASeccion('carta')">Leer carta 💗</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: CARTA -->
+    <section id="carta" class="seccion">
+        <div class="contenedor-carta">
+            <div class="tarjeta-carta">
+                <h2 class="titulo-carta">Para usted ❤️</h2>
+                
+                <div class="contenido-carta">
+                    <p>Sé que muchas veces usted puede pensar que soy fría, que no le demuestro lo suficiente lo que siento o que me cuesta decirle cuánto lo quiero. Y quizá sí sea cierto que me cuesta expresarme, porque nunca he sabido muy bien cómo poner en palabras todo lo que siento.</p>
+
+                    <p>A veces tengo tantas cosas que quisiera decirle, pero simplemente no sé cómo hacerlo. No es porque no las sienta, sino porque me cuesta mucho expresar mis sentimientos. Y aunque a veces parezca que no me importa, créame que es todo lo contrario.</p>
+
+                    <p>También se me hace difícil cuando usted me pregunta por qué lo amo. No porque no tenga razones, sino porque siento que ninguna respuesta sería suficiente para explicar todo lo que siento por usted.</p>
+
+                    <p>Lo amo por cómo es usted, por la manera en que me hace sentir, por las conversaciones, por los pequeños detalles y por esas cosas que quizás para usted son insignificantes, pero que yo sí noto y guardo conmigo.</p>
+
+                    <p>Y aunque todavía estamos comenzando a conocernos más, hay algo que sí tengo claro: me gusta tenerlo en mi vida. Me gusta conocerlo, compartir con usted y descubrir poco a poco todas esas partes que lo hacen ser quien es.</p>
+
+                    <p>Tal vez no siempre voy a saber demostrarle mi cariño de la manera más bonita. Tal vez algunas veces voy a parecer distante o voy a quedarme sin saber qué decir. Pero quiero que sepa que eso nunca significa que no me importe.</p>
+
+                    <p>Si alguna vez me quedo callada, si no sé qué responder o si me cuesta decirle cuánto lo quiero, tenga un poquito de paciencia conmigo. Estoy aprendiendo a expresar algo que siento muy bonito por usted.</p>
+
+                    <p>No sé si exista una forma perfecta de explicar por qué amo a alguien. Y sinceramente, no sé si algún día pueda explicárselo completamente.</p>
+
+                    <p>Pero sí sé que lo quiero.</p>
+
+                    <p>Sé que me importa.</p>
+
+                    <p>Sé que me hace feliz.</p>
+
+                    <p>Y sé que, aunque me cueste decirlo, <strong>lo amo mucho más de lo que sé expresar.</strong></p>
+
+                    <p>Y si algún día vuelve a preguntarme por qué lo amo, quizá no tenga una respuesta perfecta...</p>
+
+                    <p>Pero siempre voy a poder decirle:</p>
+
+                    <p class="firma"><strong>Porque es usted. ❤️</strong></p>
+                </div>
+
+                <button class="boton-siguiente" onclick="irASeccion('razones')">Razones por las que me gusta usted 💕</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: RAZONES -->
+    <section id="razones" class="seccion">
+        <div class="contenedor-razones">
+            <h2 class="titulo-razones">10 razones por las que me gusta usted 💗</h2>
+            
+            <div class="lista-razones" id="listaRazones">
+                <!-- Las razones se insertarán aquí con JavaScript -->
+            </div>
+
+            <button class="boton-siguiente" onclick="irASeccion('lluvia')">Cada te amo que le debo 💗</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: LLUVIA DE TE AMO -->
+    <section id="lluvia" class="seccion">
+        <div id="contenedor-lluvia" class="contenedor-lluvia">
+            <!-- Los "Te amo" se generarán dinámicamente aquí -->
+        </div>
+
+        <div class="mensaje-final">
+            <h2>Todos los te amo que no siempre sé decirle... ❤️</h2>
+            <p>Pero que siento por usted.</p>
+        </div>
+
+        <button id="boton-el-fin" class="boton-el-fin" style="display: none;" onclick="irASeccion('fin')">El fin 💗</button>
+    </section>
+
+    <!-- SECCIÓN 5: EL FIN -->
+    <section id="fin" class="seccion">
+        <div class="contenedor-fin">
+            <h2 class="titulo-fin">El fin ❤️</h2>
+            
+            <div class="mensaje-despedida">
+                <p class="linea-especial"><strong>Kevin, te amo demasiado. ❤️</strong></p>
+                
+                <p>Quizá nunca encuentre la manera perfecta de explicarle todo lo que siento, pero espero que esta pequeña carta le haya ayudado a entender aunque sea un poquito de todo lo que llevo dentro.</p>
+                
+                <p>No soy muy buena diciendo lo que siento, pero quiero que nunca dude de que usted es alguien muy especial para mí. Me gusta tenerlo en mi vida, me gusta conocerlo cada día un poquito más y me hace feliz compartir momentos con usted.</p>
+                
+                <p>Gracias por llegar a mi vida y por hacerme sentir cosas tan bonitas.</p>
+                
+                <p>Y aunque a veces me cueste decirlo, quiero que lo tenga siempre presente:</p>
+                
+                <p class="parrafo-final"><strong>Lo quiero muchísimo, Kevin.<br>Lo amo demasiado.<br>Y todos los "te amo" que alguna vez me quedé sin decirle, espero que pueda encontrarlos en esta pequeña carta. ❤️</strong></p>
+            </div>
+            
+            <p class="firma-final">Con todo mi amor, Valerie. 💗</p>
+        </div>
+
+        <!-- Canvas para la animación del corazón -->
+        <canvas id="corazon-canvas" class="corazon-canvas"></canvas>
+
+        <!-- Mensaje final del corazón latiendo -->
+        <p id="mensaje-corazon-latido" class="mensaje-corazon-latido">Y este corazón... también late por usted. ❤️</p>
+    </section>
+
+    <!-- Decoración: Corazones flotantes en el fondo -->
+    <div id="fondo-decorativo" class="fondo-decorativo"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
